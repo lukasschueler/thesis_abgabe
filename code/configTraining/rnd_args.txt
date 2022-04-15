@@ -1,0 +1,42 @@
+--env', help='environment ID', default='MiniGrid-DoorKey-8x8-v0'
+#Choices: 'MiniGrid-DoorKey-8x8-v0', 'MiniGrid-DoorKey-5x5-v0', 'MiniGrid-DoorKey-16x16-v0',
+'MiniGrid-Dynamic-Obstacles-6x6-v0','MiniGrid-Dynamic-Obstacles-Random-6x6-v0'
+
+--exp_name', type=str, default='Just another test'
+
+--num-timesteps', type=int, default=int(1000448)
+Choices: 2000896, 5002240
+
+--num_env', type=int, default=8
+Choices:8,16,32,64
+
+--policy', type=str, default='rnn', 
+Choices= 'cnn', 'rnn'
+
+--ext_coeff', type=float, default=1.
+
+--int_coeff', type=float, default=1.
+
+--number_stack', type=int, default=4
+Choices: 1, x
+
+
+
+-------------------------------------------------------------------------------------
+
+
+
+--seed', help='RNG seed', type=int, default=0
+--max_episode_steps', type=int, default=4500
+--use_news', type=int, default=0
+--gamma', type=float, default=0.99
+--gamma_ext', type=float, default=0.99
+--lam', type=float, default=0.95
+--update_ob_stats_every_step', type=int, default=0
+--update_ob_stats_independently_per_gpu', type=int, default=0
+--update_ob_stats_from_random_agent', type=int, default=1
+--proportion_of_exp_used_for_predictor_update', type=float, default=1.
+--tag', type=str, default=''
+--dynamics_bonus', type=int, default=0
+
+

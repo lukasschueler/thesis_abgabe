@@ -1,0 +1,50 @@
+'--exp_name', type=str, default='Just another test'
+
+'--tile_size', type=int, default=8
+Choices: 8 for default, 12 for feature extractor testing
+
+'--feat_learning', type=str, default="idf"
+Choices= "none", "idf", "vaesph", "vaenonsph", "pix2pix"
+
+'--num_dynamics', type=int, default=5
+Choices: 1,5
+
+'--var_output', action='store_true', default=True
+Choices: False, True
+
+'--ext_coeff', type=float, default=1.
+'--int_coeff', type=float, default=1.
+
+'--num_timesteps', type=int, default=1000448
+Choices: 2000896, 5002240
+
+'--envs_per_process', type=int, default=8
+Choices:8,16,32,64
+
+'--env', help='environment ID', default='MiniGrid-DoorKey-8x8-v0',type=str
+#Choices: 'MiniGrid-DoorKey-8x8-v0', 'MiniGrid-DoorKey-5x5-v0', 'MiniGrid-DoorKey-16x16-v0',
+'MiniGrid-Dynamic-Obstacles-6x6-v0','MiniGrid-Dynamic-Obstacles-Random-6x6-v0'
+
+
+----------------------------------------------------------------------------------------------
+'--expID', type=str, default='000'
+'--seed', help='RNG seed', type=int, default=0)
+'--dyn_from_pixels', type=int, default=0)
+'--use_news', type=int, default=0)
+'--layernorm', type=int, default=0)
+'--record_when', type=int, default=400)
+'--nsteps_per_seg', type=int, default=128)
+'--nsegs_per_env', type=int, default=1)
+'--nlumps', type=int, default=1)
+'--lambda', type=float, default=0.95)
+'--gamma', type=float, default=0.99)
+'--nminibatches', type=int, default=8)
+'--norm_adv', type=int, default=1)
+'--norm_rew', type=int, default=1)
+'--lr', type=float, default=0.0001)
+'--ent_coeff', type=float, default=0.001)
+'--nepochs', type=int, default=4)
+'--max-episode-steps', help='maximum number of timesteps for episode', default=4500, type=int)
+'--env_kind', type=str, default="custom")
+'--noop_max', type=int, default=30)
+'--stickyAtari', action='store_true', default=True)
